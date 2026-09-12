@@ -1,70 +1,229 @@
 <!DOCTYPE html>
-<html>
+<html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Challan</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-        }
+  <title>Kusum Koli</title>
 
-        h2 {
-            text-align: center;
-            background: #222;
-            color: white;
-            padding: 15px;
-            margin: 0;
-        }
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        .buttons {
-            text-align: center;
-            padding: 15px;
-            background: white;
-        }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
 
-        .buttons a {
-            display: inline-block;
-            margin: 5px;
-            padding: 10px 18px;
-            background: #1976d2;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-        }
+    header {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+    }
 
-        .pdf-container {
-            width: 100%;
-            height: calc(100vh - 130px);
-            background: white;
-        }
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
 
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+    header p {
+      font-size: 17px;
+    }
+
+    nav {
+      background: white;
+      padding: 12px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 8px #ccc;
+    }
+
+    nav a {
+      display: inline-block;
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+      margin: 5px 8px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #dff7ff, #fff);
+    }
+
+    .hero h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #008cba;
+      color: white;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 15px;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 3px 12px #ddd;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 
 <body>
 
-<h2>My Challan</h2>
+  <header>
+    <h1>Kusum Koli</h1>
+    <p>আমাদের Website-এ আপনাকে স্বাগতম</p>
+  </header>
 
-<div class="buttons">
-    <a href="challan.pdf" target="_blank">📄 Open PDF</a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#photos">Photos</a>
+    <a href="#songs">MP3 Songs</a>
+    <a href="#remix">Remix Songs</a>
+    <a href="#videos">Videos</a>
+    <a href="#pdf">PDF</a>
+  </nav>
 
-    <a href="challan.pdf" download>⬇ Download PDF</a>
+  <div class="hero" id="home">
+    <h2>স্বাগতম</h2>
+    <p>আমাদের নতুন গান, ভিডিও, ছবি এবং অন্যান্য কনটেন্ট এখানে দেখুন।</p>
+    <a class="button" href="#songs">গান শুনুন</a>
+  </div>
 
-    <a href="challan.pdf" target="_blank">⛶ Full Screen</a>
-</div>
+  <section id="photos">
+    <h2>📷 Photos</h2>
 
-<div class="pdf-container">
-    <iframe src="challan.pdf"></iframe>
-</div>
+    <div class="cards">
+      <div class="card">
+        <h3>আমাদের ছবি</h3>
+        <p>Image folder থেকে ছবি এখানে যোগ করা যাবে।</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="songs">
+    <h2>🎵 MP3 Songs</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Song 1</h3>
+        <audio controls>
+          <source src="Mp3%20songs/song1.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <div class="card">
+        <h3>Song 2</h3>
+        <audio controls>
+          <source src="Mp3%20songs/song2.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="remix">
+    <h2>🎧 Remix Songs</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Remix Song 1</h3>
+        <audio controls>
+          <source src="Remix%20songs/remix1.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="videos">
+    <h2>🎬 Videos</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>আমাদের ভিডিও</h3>
+        <p>Videos folder-এর ভিডিও এখানে দেখানো যাবে।</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pdf">
+    <h2>📄 PDF</h2>
+
+    <div class="card">
+      <h3>Challan PDF</h3>
+      <p>PDF দেখতে নিচের বাটনে চাপ দিন।</p>
+
+      <a class="button" href="challan.pdf" target="_blank">
+        PDF দেখুন
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Kusum Koli | All Rights Reserved</p>
+  </footer>
 
 </body>
 </html>

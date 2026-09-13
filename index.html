@@ -1,23 +1,135 @@
-your-repository/
-│
-├── index.html
-│
-├── images/
-│   ├── photo1.jpg
-│   ├── photo2.jpg
-│   ├── photo3.jpg
-│   └── photo4.jpg
-│
-├── songs/
-│   ├── song1.mp3
-│   ├── song2.mp3
-│   ├── song3.mp3
-│   ├── remix1.mp3
-│   └── remix2.mp3
-│
-├── videos/
-│   ├── video1.mp4
-│   └── video2.mp4
-│
-└── pdf/
-    └── document.pdf
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kusum Koli Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 25px 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        nav {
+            background: #222;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        audio, video {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 18px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Welcome to My Website</h1>
+    <p>Photos • Songs • Videos • Documents</p>
+</header>
+
+<nav>
+    <a href="#photos">Photos</a>
+    <a href="#songs">Songs</a>
+    <a href="#videos">Videos</a>
+    <a href="#pdf">PDF</a>
+</nav>
+
+<div class="container">
+
+    <div class="card" id="photos">
+        <h2>📷 Photos</h2>
+
+        <img src="images/photo1.jpg" alt="Photo 1">
+        <br><br>
+
+        <img src="images/photo2.jpg" alt="Photo 2">
+    </div>
+
+    <div class="card" id="songs">
+        <h2>🎵 Songs</h2>
+
+        <p>Song 1</p>
+        <audio controls>
+            <source src="songs/song1.mp3" type="audio/mpeg">
+        </audio>
+
+        <p>Song 2</p>
+        <audio controls>
+            <source src="songs/song2.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="card" id="videos">
+        <h2>🎬 Videos</h2>
+
+        <video controls>
+            <source src="videos/video1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="card" id="pdf">
+        <h2>📄 PDF Document</h2>
+
+        <a class="button" href="pdf/document.pdf" target="_blank">
+            Open PDF
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>

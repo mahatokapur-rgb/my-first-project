@@ -1,14 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>আমার ওয়েবসাইট</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.25);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 16px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      background: white;
+      color: #667eea;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      color: #333;
+      width: 280px;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      margin-top: 40px;
+      background: rgba(0, 0, 0, 0.2);
+    }
+  </style>
 </head>
 
 <body>
 
-    <h1>Welcome</h1>
+  <header>
+    <h1>আমার ওয়েবসাইট</h1>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome</h2>
+
+    <p>
+      আমাদের ওয়েবসাইটে আপনাকে স্বাগতম।
+      এখানে আপনি প্রয়োজনীয় তথ্য ও পরিষেবা পাবেন।
+    </p>
+
+    <a href="#" class="button">Get Started</a>
+  </section>
+
+  <section class="cards">
+
+    <div class="card">
+      <h3>আমাদের সম্পর্কে</h3>
+      <p>আমাদের সম্পর্কে বিস্তারিত তথ্য এখানে থাকবে।</p>
+    </div>
+
+    <div class="card">
+      <h3>আমাদের পরিষেবা</h3>
+      <p>বিভিন্ন পরিষেবা সম্পর্কে তথ্য এখানে থাকবে।</p>
+    </div>
+
+    <div class="card">
+      <h3>যোগাযোগ</h3>
+      <p>আমাদের সঙ্গে যোগাযোগ করতে এখানে ক্লিক করুন।</p>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 My Website | All Rights Reserved
+  </footer>
 
 </body>
 </html>

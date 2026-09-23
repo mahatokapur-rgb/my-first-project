@@ -1,16 +1,326 @@
-your-repository/
-│
-├── index.html
-├── style.css
-│
-├── documents/
-│   ├── kp-notes.pdf
-│   ├── wbp-notes.pdf
-│   └── question-paper.pdf
-│
-├── learning/
-│   ├── study-notes.pdf
-│   └── practice-paper.pdf
-│
-└── images/
-    └── banner.jpg
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Website</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<header>
+    <div class="logo">My Website</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#documents">Documents</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+
+    <h1>Welcome to My Website</h1>
+
+    <p>
+        Discover useful information, helpful resources,
+        documents and learning materials in one place.
+    </p>
+
+    <a href="#documents" class="btn">
+        Explore Documents
+    </a>
+
+</section>
+
+
+<!-- About -->
+<section id="about" class="about">
+
+    <h2>About Us</h2>
+
+    <p>
+        Welcome to our website. We provide useful information,
+        educational materials, documents and digital resources
+        for everyone.
+    </p>
+
+    <p>
+        Our goal is to create a simple, modern and
+        user-friendly online experience.
+    </p>
+
+</section>
+
+
+<!-- Services -->
+<section id="services">
+
+    <h2>Our Services</h2>
+
+    <p class="section-text">
+        Explore useful services and resources available on our website.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">📚</div>
+            <h3>Information</h3>
+            <p>
+                Find useful and informative content on different topics.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">💼</div>
+            <h3>Online Services</h3>
+            <p>
+                Explore helpful online services, tools and resources.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">💡</div>
+            <h3>Helpful Resources</h3>
+            <p>
+                Get useful ideas, guides and resources for everyday needs.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">📄</div>
+            <h3>Documents</h3>
+            <p>
+                Access useful documents, forms, PDFs and notes.
+            </p>
+
+            <a href="#documents" class="card-btn">
+                View Documents
+            </a>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">🎓</div>
+            <h3>Learning</h3>
+            <p>
+                Discover educational materials and learning resources.
+            </p>
+
+            <a href="#learning" class="card-btn">
+                Start Learning
+            </a>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">🌐</div>
+            <h3>Digital Resources</h3>
+            <p>
+                Find useful digital tools and online resources.
+            </p>
+
+            <a href="#resources" class="card-btn">
+                Explore
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Documents Section -->
+<section id="documents" class="documents">
+
+    <h2>📄 Documents & PDF</h2>
+
+    <p class="section-text">
+        Download or view useful documents and PDF files.
+    </p>
+
+
+    <div class="document-box">
+
+        <div class="document-item">
+
+            <div>
+                <h3>📘 Excel Important Formula Notes</h3>
+                <p>
+                    Useful Excel formulas and notes.
+                </p>
+            </div>
+
+            <div>
+                <a href="documents/excel-notes.pdf"
+                   target="_blank"
+                   class="view-btn">
+                    View PDF
+                </a>
+
+                <a href="documents/excel-notes.pdf"
+                   download
+                   class="download-btn">
+                    Download
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="document-item">
+
+            <div>
+                <h3>📄 APAAR Form</h3>
+                <p>
+                    Download the APAAR related form.
+                </p>
+            </div>
+
+            <div>
+                <a href="documents/apaar-form.pdf"
+                   target="_blank"
+                   class="view-btn">
+                    View PDF
+                </a>
+
+                <a href="documents/apaar-form.pdf"
+                   download
+                   class="download-btn">
+                    Download
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="document-item">
+
+            <div>
+                <h3>📝 Staff Nurse Question Paper</h3>
+                <p>
+                    Previous question paper for practice.
+                </p>
+            </div>
+
+            <div>
+                <a href="documents/question-paper.pdf"
+                   target="_blank"
+                   class="view-btn">
+                    View PDF
+                </a>
+
+                <a href="documents/question-paper.pdf"
+                   download
+                   class="download-btn">
+                    Download
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Learning -->
+<section id="learning">
+
+    <h2>🎓 Learning Resources</h2>
+
+    <p class="section-text">
+        Study materials and educational resources.
+    </p>
+
+
+    <div class="learning-card">
+
+        <h3>📚 Study Notes</h3>
+
+        <p>
+            Useful notes and practice materials for students.
+        </p>
+
+        <a href="learning/study-notes.pdf"
+           target="_blank"
+           class="card-btn">
+            Open Study Notes
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- Digital Resources -->
+<section id="resources">
+
+    <h2>🌐 Digital Resources</h2>
+
+    <p class="section-text">
+        Useful online tools and digital resources.
+    </p>
+
+
+    <div class="resource-grid">
+
+        <div class="resource">
+            🔎
+            <h3>Search Tools</h3>
+            <p>Useful online search resources.</p>
+        </div>
+
+        <div class="resource">
+            💻
+            <h3>Online Tools</h3>
+            <p>Helpful digital tools.</p>
+        </div>
+
+        <div class="resource">
+            📱
+            <h3>Mobile Resources</h3>
+            <p>Useful mobile resources and websites.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Contact -->
+<section id="contact" class="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>
+        Thank you for visiting our website.
+    </p>
+
+</section>
+
+
+<!-- Footer -->
+<footer>
+
+    <p>
+        © 2026 My Website | All Rights Reserved
+    </p>
+
+</footer>
+
+
+</body>
+</html>
